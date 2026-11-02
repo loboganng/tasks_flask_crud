@@ -1,0 +1,270 @@
+{
+    "info": {
+        "name": "API de Gerenciamento de Tarefas",
+        "description": "",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "Obter todas as tarefas",
+            "description": "",
+            "event": [],
+            "auth": {},
+            "request": {
+                "auth": {},
+                "method": "GET",
+                "body": {},
+                "header": [],
+                "url": {
+                    "raw": "{{baseUrl}}/tasks",
+                    "path": [
+                        "tasks"
+                    ],
+                    "host": [
+                        "{{baseUrl}}"
+                    ],
+                    "query": [],
+                    "variable": []
+                }
+            },
+            "response": [
+                {
+                    "name": "Success",
+                    "originalRequest": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                            "raw": "{{baseUrl}}/tasks",
+                            "path": [
+                                "tasks"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [],
+                            "variable": []
+                        },
+                        "body": {}
+                    },
+                    "cookie": []
+                }
+            ],
+            "protocolProfileBehavior": {
+                "strictSSL": false,
+                "followRedirects": true
+            }
+        },
+        {
+            "name": "Criar nova tarefa",
+            "description": "",
+            "event": [],
+            "auth": {},
+            "request": {
+                "auth": {},
+                "method": "POST",
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "header": [],
+                "url": {
+                    "raw": "{{baseUrl}}/tasks",
+                    "path": [
+                        "tasks"
+                    ],
+                    "host": [
+                        "{{baseUrl}}"
+                    ],
+                    "query": [],
+                    "variable": []
+                }
+            },
+            "response": [
+                {
+                    "name": "Success",
+                    "originalRequest": {
+                        "method": "POST",
+                        "header": [],
+                        "url": {
+                            "raw": "{{baseUrl}}/tasks",
+                            "path": [
+                                "tasks"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [],
+                            "variable": []
+                        },
+                        "body": {
+                            "mode": "raw",
+                            "raw": "",
+                            "options": {
+                                "raw": {
+                                    "language": "text"
+                                }
+                            }
+                        }
+                    },
+                    "cookie": []
+                }
+            ],
+            "protocolProfileBehavior": {
+                "strictSSL": false,
+                "followRedirects": true
+            }
+        },
+        {
+            "name": "Atualizar tarefa existente",
+            "description": "",
+            "event": [],
+            "auth": {},
+            "request": {
+                "auth": {},
+                "method": "PUT",
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "header": [],
+                "url": {
+                    "raw": "{{baseUrl}}/tasks/:taskId",
+                    "path": [
+                        "tasks",
+                        ":taskId"
+                    ],
+                    "host": [
+                        "{{baseUrl}}"
+                    ],
+                    "query": [],
+                    "variable": [
+                        {
+                            "key": "taskId",
+                            "value": "",
+                            "description": "ID da tarefa a ser atualizada",
+                            "type": "string"
+                        }
+                    ]
+                }
+            },
+            "response": [
+                {
+                    "name": "Success",
+                    "originalRequest": {
+                        "method": "PUT",
+                        "header": [],
+                        "url": {
+                            "raw": "{{baseUrl}}/tasks/:taskId",
+                            "path": [
+                                "tasks",
+                                ":taskId"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [],
+                            "variable": [
+                                {
+                                    "key": "taskId",
+                                    "value": "",
+                                    "description": "ID da tarefa a ser atualizada",
+                                    "disabled": false
+                                }
+                            ]
+                        },
+                        "body": {
+                            "mode": "raw",
+                            "raw": "",
+                            "options": {
+                                "raw": {
+                                    "language": "text"
+                                }
+                            }
+                        }
+                    },
+                    "cookie": []
+                }
+            ],
+            "protocolProfileBehavior": {
+                "strictSSL": false,
+                "followRedirects": true
+            }
+        },
+        {
+            "name": "Deletar tarefa existente",
+            "description": "",
+            "event": [],
+            "auth": {},
+            "request": {
+                "auth": {},
+                "method": "DELETE",
+                "body": {},
+                "header": [],
+                "url": {
+                    "raw": "{{baseUrl}}/tasks/:taskId",
+                    "path": [
+                        "tasks",
+                        ":taskId"
+                    ],
+                    "host": [
+                        "{{baseUrl}}"
+                    ],
+                    "query": [],
+                    "variable": [
+                        {
+                            "key": "taskId",
+                            "value": "",
+                            "description": "ID da tarefa a ser deletada",
+                            "type": "string"
+                        }
+                    ]
+                }
+            },
+            "response": [
+                {
+                    "name": "Success",
+                    "originalRequest": {
+                        "method": "DELETE",
+                        "header": [],
+                        "url": {
+                            "raw": "{{baseUrl}}/tasks/:taskId",
+                            "path": [
+                                "tasks",
+                                ":taskId"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [],
+                            "variable": [
+                                {
+                                    "key": "taskId",
+                                    "value": "",
+                                    "description": "ID da tarefa a ser deletada",
+                                    "disabled": false
+                                }
+                            ]
+                        },
+                        "body": {}
+                    },
+                    "cookie": []
+                }
+            ],
+            "protocolProfileBehavior": {
+                "strictSSL": false,
+                "followRedirects": true
+            }
+        }
+    ],
+    "variable": [],
+    "event": [],
+    "auth": {}
+}
